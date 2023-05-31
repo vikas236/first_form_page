@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="#">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="base">
+            <img src="odin_logo.png" alt="odin_logo" class="logo">
+            <h1>ODIN</h1>
+        </div>
+    </div>
+    <div class="main">
+        <div class="description">
+            <p>This is not a real online service! you know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
+            <p>you know you want to.</p>
+        </div>
+        <form action="#">
+            <legend>Let's do this!</legend>
+            <fieldset class="name">
+                <div class="input">
+                <label for="first_name">FIRST NAME</label>
+                <input name="first_name" type="text" id="first_name" minlength="3" maxlength="20" placeholder="eg: john" required>
+            </div>
+            <div class="input">
+                <label for="last_name">LAST NAME</label>
+                <input name="last_name" type="text" id="last_name" minlength="2" maxlength="20" placeholder="eg: smith" required>
+            </div>
+            </fieldset>
+            <fieldset class="email_num">
+            <div class="input">
+                <label for="email">EMAIL</label>
+                <input name="email" id="email" type="email" placeholder="eg: abc@gmail.com" required>
+            </div>
+            <div class="input">
+                <label for="phone">PHONE NUMBER</label>
+                <input name"phone" id="phone" type="tel" pattern="(\d{2}\s\d{10})" placeholder="eg: 91 1234567890" required>
+            </div>
+            </fieldset>
+            <fieldset class="passwords">
+            <div class="input">
+                <label for="password">PASSWORD</label>
+                <input name="password" type="password" id="password" minlength="7" maxlength="20" placeholder="eg: ********" required>
+                <span class="test inactive">* Passowrds must match</span>
+            </div>
+            <div class="input">
+                <label for="password_confirm">CONFIRM PASSWORD</label>
+                <input name="password_confirm" id="password_confirm" type="password" minlength="7" maxlength="20" required>
+            </div>
+            </fieldset>
+            <button type="submit">Create Account</button>
+            <span class="login">Already have an account? <a href="#">Log in</a></span>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

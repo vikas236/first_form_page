@@ -1,0 +1,171 @@
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("Norse-Bold.otf");
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    display: flex;
+}
+
+.sidebar {
+    height: 100vh;
+    background: center / cover no-repeat url("https://images.unsplash.com/photo-1685306314640-31a02b996d1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.sidebar .base {
+    width: 100%;
+    height: 17%;
+    background: rgba(0, 0, 0, .6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 45vh;
+}
+
+.sidebar .logo {
+    width: 11vh;
+}
+
+.sidebar h1 {
+    display: inline-block;
+    color: white;
+    font-family: norse-bold;
+    font-size: 100px;
+    margin-right: 10%;
+}
+
+.main {
+    width: 90%;
+    flex: 2;
+    display: felx;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -15px;
+}
+
+.main .description {
+    width: 100%;
+    height: 25%;
+    background: rgba(0, 0, 0, .03);
+    padding-top: 15%;
+    padding-bottom: 13%;
+    overflow: hidden;
+}
+
+.main .description p {
+    width: 75%;
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .3);
+}
+
+form legend {
+    font-size: 28px;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form fieldset {
+    border: none;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+}
+
+form fieldset label {
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 7px;
+    margin-top: 5px;
+}
+
+form input {
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #E5E7EB;
+    padding: 5px 7px;
+    transition: .2s;
+}
+
+form input:focus {
+    outline: none;
+    box-shadow: 2px 3px 3px 1px rgba(0, 0, 0, .2);
+}
+
+form input.valid {
+    border: 1px solid blue;
+}
+
+form input.invalid {
+    border: 1px solid red;
+}
+
+input::placeholder {
+    opacity: 0;
+}
+
+input:focus::placeholder {
+    opacity: .2; 
+}
+
+.test {
+    font-size: 12px;
+    display: block;
+    margin-top: 1px;
+    color: red;
+}
+
+.test.inactive {
+    display: none;
+}
+
+form [type="submit"] {
+    padding: 10px;
+    background: #596D48;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 52px;
+    margin-top: 50px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+form .login {
+    font-size: 16px;
+    margin-left: 52px;
+    margin-top: 25px;
+    letter-spacing: .5px;
+}
+
+form .login a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+form .login a:hover {
+    color: #A7C7E7;
+}
