@@ -17,7 +17,8 @@ body {
     height: 100vh;
     background: center / cover no-repeat url("https://images.unsplash.com/photo-1685306314640-31a02b996d1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80");
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     flex: 1;
 }
@@ -29,7 +30,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 45vh;
+    margin-bottom: 50px;
 }
 
 .sidebar .logo {
@@ -42,6 +43,20 @@ body {
     font-family: norse-bold;
     font-size: 100px;
     margin-right: 10%;
+}
+
+.sidebar .photographer {
+    color: white;
+    transform: translateY(150px);
+}
+
+.sidebar .photographer a {
+    text-decoration: none;
+    color: #596D48;
+}
+
+.sidebar .photographer a:hover {
+    color: white;
 }
 
 .main {
@@ -151,6 +166,13 @@ form [type="submit"] {
     color: white;
     font-size: 14px;
     cursor: pointer;
+    border: 1px solid #596D48;
+}
+
+form [type="submit"]:hover {
+    transform: scale(1.02);
+    color: #596D48;
+    background: white;
 }
 
 form .login {
